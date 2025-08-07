@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-size: 25px;">
+      Seleccionar dificultad
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="botones">
+    <ion-button (click)="asignarDificultad('facil')">
+      Fácil
+    </ion-button>
+    <ion-button (click)="asignarDificultad('medio')">
+      Medio
+    </ion-button>
+    <ion-button (click)="asignarDificultad('dificil')">
+      Difícil
+    </ion-button>
+    <ion-button (click)="logout()">
+      Cerrar sesión <i class="bi bi-box-arrow-in-left"></i>
+    </ion-button>
+  </div>
+
+  <div class="ranking">
+    <ion-button (click)="asignarDificultad('top')" style="font-size: 25px;">
+      Ver Mejores 5
+    </ion-button>
+  </div>
+  <div class="imagen">
+    <img src="assets/imgs/trofeo.png" alt="">
+  </div>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Mejores 5 Resultados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+   
+
+    <ion-item-divider color="light">
+      <ion-label class="Dificultad"><strong>Difícil</strong></ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor="let result of topDificil">
+      <ion-label>
+        <h2>{{ result.users.perfil }}</h2>
+        <p>Tiempo: {{ result.elapsed_time }} segundos</p>
+        <p>Fecha: {{ result.date_played }}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

@@ -1,20 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="login-content">
+  <div class="login-wrapper">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    
+    <h2 class="login-title">Desafiá tu memoria <br />encontrá los pares</h2>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="inputbox input-icon-right">
+      <ion-input
+        type="email"
+        placeholder="Ingrese su correo"
+        [(ngModel)]="email"
+        class="login-input">
+      </ion-input>
+      <i class="bi bi-person-fill"></i>
+    </div>
+
+    <div class="inputbox input-icon-right">
+      <ion-input
+        type="password"
+        placeholder="Ingrese su contraseña " 
+        [(ngModel)]="password"
+        class="login-input">
+      </ion-input>
+      <i class="bi bi-lock"></i>
+    </div>
+
+    <ion-button expand="block" class="login-btn" (click)="login()">INICIAR SESIÓN</ion-button>
+
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    
+
+    <div class="quick-users">
+      <div class="user-button">
+        <ion-button shape="round"  (click)="LlenarUsers('user1@gmail.com', '123456')">
+          <i class="bi bi-person-arms-up"></i>
+        </ion-button>
+        <span>Usuario 1</span>
+      </div>
+      <div class="user-button">
+        <ion-button class="btn-user" shape="round"  (click)="LlenarUsers('user2@gmail.com', '123456')">
+          <i class="bi bi-person-arms-up"></i>
+        </ion-button>
+        <span>Usuario 2</span>
+      </div>
+      <div class="user-button">
+        <ion-button shape="round" color="dark" fill="solid" (click)="LlenarUsers('user3@gmail.com', '123456')">
+          <i class="bi bi-person-arms-up"></i>
+        </ion-button>
+        <span>Usuario 3</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="img-footer">
+    <img src="assets/cards/imagen memotest.jpeg" alt="">
   </div>
 </ion-content>
