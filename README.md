@@ -61,16 +61,16 @@ Los rankings se ordenan por **mejor desempeño** (menos movimientos y menor tiem
 ## 📸 Capturas
 
 ### 🧑‍💻 Login
-![Login](assets/screens/login.png)
+![Login](src/assets/screens/login.png)
 
 ### 🧠 Selección de dificultad
-![Modos de juego](assets/screens/modos.png)
+![Modos de juego](src/assets/screens/modos.png)
 
 ### 🥇 Ranking
-![Ranking](assets/screens/rankings.png)
+![Ranking](src/assets/screens/rankings.png)
 
 ### 🚀 Splash screen
-![Splash](assets/screens/splash.png)
+![Splash](src/assets/screens/splash.png)
 
 ---
 
