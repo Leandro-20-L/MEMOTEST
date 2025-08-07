@@ -58,9 +58,19 @@ Los rankings se ordenan por **mejor desempeño** (menos movimientos y menor tiem
 
 ---
 
-## 📸 Capturas (opcional)
+## 📸 Capturas
 
-> Podés agregar imágenes aquí si querés mostrar pantallas de la app.
+### 🧑‍💻 Login
+![Login](assets/screens/login.png)
+
+### 🧠 Selección de dificultad
+![Modos de juego](assets/screens/modos.png)
+
+### 🥇 Ranking
+![Ranking](assets/screens/rankings.png)
+
+### 🚀 Splash screen
+![Splash](assets/screens/splash.png)
 
 ---
 
